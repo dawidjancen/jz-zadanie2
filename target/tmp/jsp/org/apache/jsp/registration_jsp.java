@@ -63,7 +63,7 @@ public final class registration_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("    \r\n");
       out.write("    <a href=\"/\">Logowanie</a>\r\n");
       out.write("</body>\r\n");
-      out.write("</html>");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

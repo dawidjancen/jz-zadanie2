@@ -34,7 +34,7 @@ public class Profile extends HttpServlet {
 		writer.println("<p>Typ konta: " + type + "</p>");
 
 		if (type.equals("premium")) {
-			writer.println("<p><a href='/premium'>Strona Premium</a></p>");
+			writer.println("<p><a href='/premium.jsp'>Strona Premium</a></p>");
 		}
 		
 		if (type.equals("admin")) {

@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebFilter({"/profile"})
-public class ProfileFilter implements Filter {
+@WebFilter({"/premium.jsp"})
+public class PremiumFilter implements Filter {
 	@Override
 	public void destroy() {
 
@@ -28,6 +28,15 @@ public class ProfileFilter implements Filter {
 		if (session.getAttribute("loggedIn") == null) {
 			HttpServletResponse httpResponse = (HttpServletResponse) response;
 			httpResponse.sendRedirect("/");
+			
+			return;
+		}
+		
+		String type = (String)session.getAttribute("type");
+		
+		if (!type.equals("premium") && !type.equals("admin")) {
+			HttpServletResponse httpResponse = (HttpServletResponse) response;
+			httpResponse.sendRedirect("/profile");
 			
 			return;
 		}

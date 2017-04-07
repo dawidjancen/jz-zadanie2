@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class premium_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -46,17 +46,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("<title>Logowanie</title>\r\n");
+      out.write("<title>Premium</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
-      out.write("    <form action=\"login\" method=\"post\">\r\n");
-      out.write("        <label>Login:</label><input type=\"text\" id=\"login\" name=\"login\" />\r\n");
-      out.write("        <label>Hasło:</label><input type=\"text\" id=\"password\" name=\"password\" />\r\n");
-      out.write("\r\n");
-      out.write("        <input type=\"submit\" id=\"submit\" value=\"Wyślij\" />\r\n");
-      out.write("    </form>\r\n");
+      out.write("    <h1>Strona premium</h1>\r\n");
       out.write("    \r\n");
-      out.write("    <a href=\"/registration.jsp\">Rejestracja</a>\r\n");
+      out.write("    <a href=\"/profile\">Profil</a>\r\n");
       out.write("</body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
