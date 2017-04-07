@@ -59,7 +59,7 @@ public class Admin extends HttpServlet {
 	        writer.println("<input type='submit' id='submit' value='Wyœlij' />");
 			writer.println("</form>");
 			
-			writer.println("<a href='/profile'></a>");
+			writer.println("<a href='/profile'>Profil</a>");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
