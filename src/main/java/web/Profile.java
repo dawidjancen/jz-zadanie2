@@ -38,7 +38,7 @@ public class Profile extends HttpServlet {
 		}
 		
 		if (type.equals("admin")) {
-			writer.println("<p><a href='/premium'>Strona Premium</a></p>");
+			writer.println("<p><a href='/premium.jsp'>Strona Premium</a></p>");
 			writer.println("<p><a href='/admin'>Zarz¹dzanie kontami</a></p>");
 		}
 	}
